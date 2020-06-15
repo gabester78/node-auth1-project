@@ -28,3 +28,27 @@ Add support for **sessions** and **cookies**, use them to keep a record of logge
 
 - Write a piece of **global** middleware that ensures a user is logged in when accessing _any_ route prefixed by `/api/users`.
 - Build a React application that implements components to register, login and view a list of users. Gotta keep sharpening your React skills.
+
+npm init -y
+npx gitignore node //only if there is not gitignore in project
+npm i -D nodemon
+npm i express
+npm i knex sqlite3
+npm i knex-cleaner
+npm i cors
+npm i helmet
+npm i dotenv
+npm i bcryptjs
+npm i express-session
+npm i connect-session-knex
+mkdir data
+mkdir schemes
+touch index.js
+touch server.js
+knex init
+cd data
+mkdir migrations
+mkdir seeds
+touch db-config.js
+cd -
+knex migrate:make new_table
